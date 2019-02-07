@@ -1,6 +1,6 @@
 ## Goal
 
-Build a `Table` component in React, using it in our mini web app to load in and display data from a Star Wars API. Use a live API endpoint for grabbing Star Wars characters for which the documentation is: https://swapi.co/documentation#people, An example API response is here: https://swapi.co/api/people
+Build a `Table` component in React to load in and display data from a Star Wars API. Use a live API endpoint for grabbing Star Wars characters for which the documentation is: https://swapi.co/documentation#people, An example API response is here: https://swapi.co/api/people
 
 ## Specs
 
@@ -8,7 +8,6 @@ Build a `Table` component in React, using it in our mini web app to load in and 
   - Uses `rows` and `columns` props
 - Can custom render a column of data
 - Can sort a column of data when a column is clicked
-  - If the `Name` column is clicked, it should sort the rows by descending order
   - If another column is clicked, it should change the active sort
   - If the same column is clicked, it should toggle the sort order by ascending / descending
   - Custom sorts per column are supported
