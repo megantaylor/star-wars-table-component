@@ -1,0 +1,87 @@
+.scroll-container {
+  overflow-x: auto;
+  margin-left: 175px;
+}
+
+.table {
+  border-spacing: 0px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-row {
+  border-bottom: 1px solid silver;
+}
+
+tbody .table-row:last-child,
+tbody .table-row:last-child .cell-fixed {
+  border: none;
+}
+
+.cell {
+  padding: 15px 25px 15px 25px;
+  text-align: left;
+  vertical-align: top;
+  color: dimgrey;
+  height: 75px;
+}
+
+.cell-header {
+  white-space: nowrap;
+  color: black;
+  height: 20px;
+  padding: 0 25px 15px 25px;
+}
+
+.cell-header::after {
+  content: ' ';
+  border: solid silver;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 5px;
+  position: relative;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  top: -4px;
+}
+
+.cell-fixed {
+  position: absolute;
+  top: auto;
+  left: 20px;
+  /* width: 145px; */
+  width: 135px;
+  text-align: left;
+  border-bottom: 1px solid silver;
+}
+
+.cell-active {
+  color: rebeccapurple;
+}
+
+.cell-active::after {
+  border-color: rebeccapurple;
+}
+
+.cell-active.asc::after {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  top: 0px;
+}
+
+.cell-active.dsc::after {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  top: -3px;
+}
+
+.cell ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.cell ul li {
+  white-space: nowrap;
+}
