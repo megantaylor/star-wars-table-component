@@ -1,6 +1,6 @@
 ## Goal
 
-Build a `Table` component in React to load in and display data from a Star Wars API. Use a live API endpoint for grabbing Star Wars characters for which the documentation is: https://swapi.co/documentation#people, An example API response is here: https://swapi.co/api/people
+Build a `Table` component in React to load in and display data from a Star Wars API. Use a live API endpoint for grabbing Star Wars characters for which the documentation is: https://swapi.co/documentation#people. An example API response is here: https://swapi.co/api/people
 
 ## Specs
 
